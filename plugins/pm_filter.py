@@ -1,5 +1,4 @@
-# Kanged From @TroJanZheX
-# REDIRECT added https://github.com/Joelkb
+
 import asyncio
 import re
 import ast
@@ -35,6 +34,18 @@ logger.setLevel(logging.ERROR)
 BUTTONS = {}
 SPELL_CHECK = {}
 FILTER_MODE = {}
+
+BTN = InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("⚡Mᴀɪɴ Gʀᴏᴜᴘ⚡", url="https://t.me/+ebT3TGDywLM0OGY9"),
+                    InlineKeyboardButton("💥Sʜᴀʀᴇ💥", url="https://t.me/share/url?url=https://t.me/UPDATECHANNELHUB")
+                ],
+		        [
+                    InlineKeyboardButton("🎭Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ🎭", url="https://t.me/UPDATECHANNELHUB"),
+                ]    
+            ]
+)
 
 @Client.on_message(filters.command('autofilter') & filters.user(ADMINS))
 async def fil_mod(client, message): 
@@ -512,14 +523,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         file_id=file_id,
                         caption=script.CHANNEL_CAP.format(query.from_user.mention, title, query.message.chat.title),
                         protect_content=True if ident == "filep" else False,
-                        reply_markup=InlineKeyboardMarkup(
-                            [
-                                [
-                                    InlineKeyboardButton("🔥 ᴄʜᴀɴɴᴇʟ 🔥", url=(MAIN_CHANNEL))
-                                ]
-                            ]
-                        )
-                    )
+                        reply_markup=InlineKeyboardMarkup(BTN)
+                        
                     Joel_tgx = await query.message.reply_text(
                         script.FILE_MSG.format(query.from_user.mention, title, size),
                         parse_mode=enums.ParseMode.HTML,
@@ -573,6 +578,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption,
+            reply_markup=InlineKeyboardMarkup(BTN),
             protect_content=True if ident == 'checksubp' else False
         )
     elif query.data == "predvd":
