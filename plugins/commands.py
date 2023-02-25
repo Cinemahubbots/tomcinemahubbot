@@ -18,6 +18,19 @@ logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
 
+BTN = InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("⚡Mᴀɪɴ Gʀᴏᴜᴘ⚡", url="https://t.me/+ebT3TGDywLM0OGY9"),
+                    InlineKeyboardButton("💥Sʜᴀʀᴇ💥", url="https://t.me/share/url?url=https://t.me/UPDATECHANNELHUB")
+                ],
+		        [
+                    InlineKeyboardButton("🎭Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ🎭", url="https://t.me/UPDATECHANNELHUB"),
+                ]    
+            ]
+)
+
+
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
@@ -215,6 +228,7 @@ async def start(client, message):
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file_id,
+                reply_markup=InlineKeyboardMarkup(BTN),
                 protect_content=True if pre == 'filep' else False,
                 )
             filetype = msg.media
@@ -248,7 +262,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('❤️‍🔥 ᴊᴏɪɴ ᴛᴏ ᴄʜᴀɴɴᴇʟ ❤️‍🔥', url=(MAIN_CHANNEL)) ] ] ),
+        reply_markup=InlineKeyboardMarkup(BTN),
         protect_content=True if pre == 'filep' else False,
         )
                     
