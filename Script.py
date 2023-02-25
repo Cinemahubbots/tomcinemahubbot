@@ -305,14 +305,13 @@ Elsa
 ©{message.chat.title}</b>
 """
 
-    CUSTOM_FILE_CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
+    CUSTOM_FILE_CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}</b>
 
 
 
-╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
-▫️<a href=https://t.me/+QUCAPzdIXXMzNjVl>𝖢𝗂𝗇𝖾𝗆𝖺 𝖧𝗎𝖻🎥™</a>
-
-╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝</b>"""
+╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═════╗
+♻️ 𝙂𝙍𝙊𝙐𝙋:-https://t.me/+ebT3TGDywLM0OGY9        
+╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═════╝>"""
 
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
