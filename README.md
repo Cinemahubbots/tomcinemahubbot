@@ -70,5 +70,5 @@
 * /font - fonts for your text
 * /deletefiles - PreDvD CamRip deletion
 ```
-<b> 😇CREATOR » [SATHAN](https://t.me/Sathan_of_telegram)</b>
+<b> 😇CREATOR » [OWNER](https://t.me/mayflower68)</b>
 
