@@ -523,7 +523,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         file_id=file_id,
                         caption=script.CHANNEL_CAP.format(query.from_user.mention, title, query.message.chat.title),
                         protect_content=True if ident == "filep" else False,
-                        reply_markup=InlineKeyboardMarkup(BTN)
+                        reply_markup=BTN
 		    )
                         
                     Joel_tgx = await query.message.reply_text(
@@ -579,7 +579,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption,
-            reply_markup=InlineKeyboardMarkup(BTN),
+            reply_markup=BTN,
             protect_content=True if ident == 'checksubp' else False
         )
     elif query.data == "predvd":
