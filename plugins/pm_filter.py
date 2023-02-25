@@ -524,6 +524,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         caption=script.CHANNEL_CAP.format(query.from_user.mention, title, query.message.chat.title),
                         protect_content=True if ident == "filep" else False,
                         reply_markup=InlineKeyboardMarkup(BTN)
+		    )
                         
                     Joel_tgx = await query.message.reply_text(
                         script.FILE_MSG.format(query.from_user.mention, title, size),
