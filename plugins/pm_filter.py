@@ -42,7 +42,7 @@ BTN = InlineKeyboardMarkup(
                     InlineKeyboardButton("💥Sʜᴀʀᴇ💥", url="https://t.me/share/url?url=https://t.me/UPDATECHANNELHUB")
                 ],
 		        [
-                    InlineKeyboardButton("🎭Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ🎭", url="https://t.me/UPDATECHANNELHUB"),
+                    InlineKeyboardButton("🎥NEW MOVIES 🎥", url="https://t.me/CM_HUB_MOVIES"),
                 ]    
             ]
 )
