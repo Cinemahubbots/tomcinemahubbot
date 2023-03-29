@@ -41,14 +41,14 @@ class evamaria(Client):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID','1436542'))
-API_HASH = environ.get('API_HASH','ace9d0fb8f46300776a985ca357bdfff')
-BOT_TOKEN = environ.get('BOT_TOKEN','6159093111:AAE4loiHhjWgH3xWP6EC5FQSx-DaQJGqqUY')
+API_ID = int(environ.get('API_ID','10001717'))
+API_HASH = environ.get('API_HASH','c8cdc2079f7ab083e644381740260265')
+BOT_TOKEN = environ.get('BOT_TOKEN','5865126212:AAG6bSxdWhkRGoICHfwAcM3T2LftJGNkhpw')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/985a92001cc860160cac4.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/92bcf73a0428be54e2d59.mp4')).split()
 
 
 NOR_IMG = environ.get('NOR_IMG', "https://telegra.ph/file/c69ef4c5b7db02c19ff7e.jpg")
@@ -61,11 +61,11 @@ MELCOW_VID = environ.get('MELCOW_VID',"https://telegra.ph/file/b26637d70f3630a7e
 
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '351170421 800422840').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001185278404').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5531461861 1198310247 1878911986').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001857849752').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL')
+auth_channel = environ.get('-1001827172465')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
