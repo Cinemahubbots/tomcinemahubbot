@@ -77,7 +77,7 @@ TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://matt1234:matt1234@cluster0.qnc2ped.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://TOMADISH:TOMADISH@cluster0.givzarp.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 MONGO_URL = os.environ.get('MONGO_URL', "")
@@ -95,8 +95,8 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 PORT = os.environ.get("PORT", "8080")
 MAX_BTN = int(environ.get('MAX_BTN', "10"))
-S_GROUP = environ.get('S_GROUP',"https://t.me/Cinemathattakam_Group")
-MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/ct_arena")
+S_GROUP = environ.get('S_GROUP',"https://t.me/CINEMA_HUB_GROUP1")
+MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/CINEMAHUB_LINK")
 FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+MUGQPbQKXAU0OTM1")
 MSG_ALRT = environ.get('MSG_ALRT', 'CINEMAHUB 💜')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
