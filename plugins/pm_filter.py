@@ -1183,7 +1183,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b><i>HEY {message.from_user.mention} \n\n\HERE IS WHAT I FOUND ON YOUR QUERY:\n {search}\n\nGROUP : {message.chat.title}</i></b>"
+        cap = f"<b><i>Here Is What i Found On Your Query {search}</b>"
     if imdb and imdb.get('poster'):
         try:
             if message.chat.id == SUPPORT_CHAT_ID:
